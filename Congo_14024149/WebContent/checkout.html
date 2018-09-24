@@ -1,0 +1,67 @@
+<!-----------------------------------------------------------------
+ *  Author:         Dale Stubbs
+ *	MMU Id:			14024149
+ *  Written:    	19/11/2015
+ *  Last updated:	17/12/2015
+ *
+ *  Checkout page created for allowing entry of delivery details
+ *	which are then transferred to the database and each customer
+ *	is then issued with a unique ID.
+ *
+ *	Code formatted to the eclipse standard.
+ *------------------------------------------------------------------>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="CongoCSS.css">
+	<title>Congo Music</title>
+</head>
+<body>
+	<div id="container">
+		<div id="content">
+			<div id = "header">
+					<a href = "index.html"><img src = "images/CongoLogo.png" width="275" height="200"></a>
+				</div><!--ends content-->
+			
+			<h2>Checkout</h2>
+				<form action = "Checkout" method = "post">
+					<div id = "fieldset">
+						<fieldset>
+							<legend>Delivery Details:</legend>
+							<label for="prefix">Prefix *:</label>	
+							<SELECT name = "prefix" required>
+	  	  						<OPTION>Mr
+	    						<OPTION>Mrs
+	    						<OPTION>Miss
+	    						<OPTION>Master
+	    						<OPTION>Dr
+	    						<OPTION>Other
+							</SELECT><br>
+							<label for="first_name">First Name *:	</label>
+								<input type = "text" name = "first_name" placeholder = "First Name" required><br>
+							<label for="surname">Last Name *:	</label>
+								<input type = "text" name = "surname" placeholder = "Last Name" required><br>
+							<label for="house_number">House/Flat Number *:	</label>
+								<input type = "number" name = "house_number" placeholder = "House/Flat Number" min = "1" required><br>
+							<label for="addressLine1">Address Line 1 *:	</label>
+								<input type = "text" name = "address1" placeholder = "Address Line 1" required><br>
+							<label for="addressLine2">Address Line 2:	</label>	
+								<input type = "text" name = "address2" placeholder = "Address Line 2"><br>
+							<label for="addressLine3">Address Line 3:	</label>	
+								<input type = "text" name = "address3" placeholder = "Address Line 3"><br>
+							<label for="town">Town *:	</label>
+								<input type = "text" name = "town" placeholder = "Town" required><br>
+							<label for="county">County *:	</label>
+								<input type = "text" name = "county" placeholder = "County" required><br>
+							<label for="post_code">Post Code *:	</label>
+								<input type = "text" name = "p_code" placeholder = "Postcode" required><br>
+						</fieldset>
+					</div><!--ends fieldset-->
+					<input class="myButton" type = "submit" value = "Proceed"><br>
+					 Fields marked with * are required.
+				</form>
+		</div><!--ends content-->
+	</div> <!--ends container-->
+</body>
+</html>

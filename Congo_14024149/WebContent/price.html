@@ -1,0 +1,43 @@
+<!-----------------------------------------------------------------
+ *  Author:         Dale Stubbs
+ *	MMU Id:			14024149
+ *  Written:    	19/11/2015
+ *  Last updated:	15/12/2015
+ *
+ *  HTML page for selection of a specific price range usinf a 
+ *	drop down menu as requested in the assignment brief.
+ *	
+ *	Code formatted to the eclipse standard.
+ *------------------------------------------------------------------>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="CongoCSS.css">
+	<title>Congo Music</title>
+</head>
+<body>
+	<div id="container">
+		<div id="content">
+			<div id = "header">
+					<a href = "index.html"><img src = "images/CongoLogo.png" width="275" height="200"></a>
+				</div><!--ends content-->
+				<form action = "prices"  method = "post">
+					<h4>Please Choose A Price Range</h4><br>
+					<select name = "price_range" required>
+						<option value = "< 5">Less than £5</option>
+	 	  				<OPTION value = "between 5 and 10">£5-£10</OPTION>
+	   					<OPTION value = "between 10 and 15">£10-£15</OPTION>
+	   					<OPTION value = "between 15 and 20">£15-£20</OPTION>
+	   					<OPTION value = "> 20">£20+</OPTION>
+					</SELECT>
+					<INPUT class="myButton" TYPE="SUBMIT" NAME="submitButton" Value="Take Me To The MUSIC!!!">
+					<br>
+				</form>
+			<div id = "servLinks">	
+				<a href = "index.html"> Let's Go Home</a>
+			</div><!--ends serLinks-->
+		</div><!--ends content-->
+	</div> <!--ends container-->
+</body>
+</html>
